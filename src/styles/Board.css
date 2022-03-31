@@ -1,0 +1,58 @@
+
+/* Table */
+.table-centered {
+    margin: 0px 40px;
+}
+.table-head-text {
+    margin-bottom: 50px;
+    margin-top: -50px;
+}
+.table-ship {
+    position: relative;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    background: white;
+}
+.disabled::after {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    content: "";
+}
+
+
+/* Table cells */
+.cell {
+    position: relative;
+    width: 40px;
+    height: 40px;
+
+    border: 1px solid #b4b4ff;
+}
+.clickable {
+    cursor: pointer;
+}
+.green {
+    background: rgba(184, 255, 180, 0.8);
+}
+
+/* Markers */
+.marker {
+    position: absolute;
+    font-size: 13px;
+}
+.marker-row {
+    width: 20px;
+    top: 12px;
+    left: -35px;
+    text-align: right;
+}
+.marker-col {
+    width: 40px;
+    top: -25px;
+    text-align: center;
+}

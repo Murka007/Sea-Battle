@@ -1,0 +1,31 @@
+.default-button {
+    outline: none;
+    border: none;
+    padding: 15px;
+
+    color: white;
+    background: #b4b4ff;
+    box-shadow: inset 0 -6px 0 #9e9ee6;
+
+    border-radius: 3px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+
+    cursor: pointer;
+}
+
+.default-button:hover {
+    background: #b6b6ff;
+}
+.default-button:active {
+    background: #a5a9e8;
+    box-shadow: inset 0 6px 0 #9a9ae3;
+    padding-top: 18px;
+    padding-bottom: 12px;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.8;
+}

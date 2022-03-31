@@ -1,0 +1,117 @@
+.ship {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(180, 180, 255, 0.2);
+    border: 3px solid #b4b4ff;
+    cursor: pointer;
+}
+.ship-destroyed {
+    background: rgba(255, 122, 122, 0.1);
+    border: 3px solid #ff7a7a;
+    pointer-events: none;
+}
+.failed {
+    background: rgba(255, 180, 180, 0.4);
+    border: 3px solid #ffb4b4;
+    animation-duration: 400ms;
+    animation-name: failedTransition;
+}
+
+@keyframes failedTransition {
+    0% { transform: translate(0px, 0px); }
+    10% { transform: translate(-35px, -10px); }
+    30% { transform: translate(25px, 8px); }
+    50% { transform: translate(-15px, -6px); }
+    70% { transform: translate(5px, 4px); }
+    100% { transform: translate(0px, 0px); }
+}
+
+
+/* Variants of ship */
+.ship-4-hor {
+    width: 160px;
+    height: 40px;
+}
+.ship-4-vert {
+    width: 40px;
+    height: 160px;
+}
+.ship-3-hor {
+    width: 120px;
+    height: 40px;
+}
+.ship-3-vert {
+    width: 40px;
+    height: 120px;
+}
+.ship-2-hor {
+    width: 80px;
+    height: 40px;
+}
+.ship-2-vert {
+    width: 40px;
+    height: 80px;
+}
+.ship-1-hor, .ship-1-vert {
+    width: 40px;
+    height: 40px;
+}
+
+/* Destroyed ship cell */
+.cell-red {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 41px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cell-red::before,
+.cell-red::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: #ff7a7a;
+    border-radius: 10px;
+}
+
+.cell-red::before {
+    transform: rotate(45deg);
+}
+
+.cell-red::after {
+    transform: rotate(-45deg);
+}
+
+/* Missed shot and ship bounds */
+.cell-missed, .cell-bounds {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    background: rgba(236, 236, 236, 0.5);
+}
+
+.cell-circle {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+.cell-missed > .cell-circle {
+    background: rgba(13, 92, 0, 0.8);
+}
+.cell-bounds > .cell-circle {
+    background: rgba(77, 148, 82, 0.2);
+}
