@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Sea-Battle/static/css/main.ab402e3e.css",
+    "main.js": "/Sea-Battle/static/js/main.1059ce6e.js",
+    "index.html": "/Sea-Battle/index.html",
+    "main.ab402e3e.css.map": "/Sea-Battle/static/css/main.ab402e3e.css.map",
+    "main.1059ce6e.js.map": "/Sea-Battle/static/js/main.1059ce6e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab402e3e.css",
+    "static/js/main.1059ce6e.js"
+  ]
+}
