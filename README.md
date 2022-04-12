@@ -1,6 +1,6 @@
 # Sea Battle game
 
-Live version of the game: https://Edrickennardyan.github.io/Sea-Battle/
+Demo version of the game: https://murka007.github.io/Tic-Tac-Toe/
 
 **Features:**
 - Responsive page
