@@ -7,3 +7,4 @@ Demo version of the game: https://murka007.github.io/Sea-Battle/
 - CSSTransitions
 - Draggable elements
 - Functionality
+- Murka loves Urban's Imgur pngs.
